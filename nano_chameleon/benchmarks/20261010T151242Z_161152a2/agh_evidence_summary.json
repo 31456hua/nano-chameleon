@@ -1,0 +1,34 @@
+[
+  {
+    "run_id": "69f40ac21827433a98ad5a231b92706c",
+    "scenario_id": "clean_a",
+    "model": "agnes-3.0-flash",
+    "session_id": "agnes:local:local-dev:cli:workspace:641810df9103ef6a",
+    "evidence_path": "D:\\chat Gpt\\2026-10-10\\miepython-https-github-com-scottprahl-miepython-3\\outputs\\nano_chameleon\\benchmarks\\20261010T151242Z_161152a2\\clean_a.agh.json",
+    "complete": true
+  },
+  {
+    "run_id": "6316c87602d84c2fab5e20a6ed5bcad9",
+    "scenario_id": "clean_b",
+    "model": "agnes-3.0-flash",
+    "session_id": "agnes:local:local-dev:cli:workspace:0965fb416b1f8007",
+    "evidence_path": "D:\\chat Gpt\\2026-10-10\\miepython-https-github-com-scottprahl-miepython-3\\outputs\\nano_chameleon\\benchmarks\\20261010T151242Z_161152a2\\clean_b.agh.json",
+    "complete": true
+  },
+  {
+    "run_id": "4ca3625df4674a17a83544d289127441",
+    "scenario_id": "noisy",
+    "model": "agnes-3.0-flash",
+    "session_id": "agnes:local:local-dev:cli:workspace:1d0386f57163af3a",
+    "evidence_path": "D:\\chat Gpt\\2026-10-10\\miepython-https-github-com-scottprahl-miepython-3\\outputs\\nano_chameleon\\benchmarks\\20261010T151242Z_161152a2\\noisy.agh.json",
+    "complete": true
+  },
+  {
+    "run_id": "93dd00121a0c415681d5d3c0d66770fa",
+    "scenario_id": "mismatch",
+    "model": "agnes-3.0-flash",
+    "session_id": "agnes:local:local-dev:cli:workspace:d351103dc1e72d2a",
+    "evidence_path": "D:\\chat Gpt\\2026-10-10\\miepython-https-github-com-scottprahl-miepython-3\\outputs\\nano_chameleon\\benchmarks\\20261010T151242Z_161152a2\\mismatch.agh.json",
+    "complete": true
+  }
+]

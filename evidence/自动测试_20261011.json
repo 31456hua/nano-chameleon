@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-11",
+  "test_count": 42,
+  "exit_code": 0,
+  "tested_submitted_source_copy": true,
+  "command": "python -m unittest discover -s nano_chameleon -p test_*.py -v",
+  "versions": {
+    "miepython": "3.3.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "mcp": "1.30.0",
+    "matplotlib": "3.11.2",
+    "colour-science": "0.4.7",
+    "plotly": "6.9.0",
+    "starlette": "1.7.0",
+    "uvicorn": "0.54.0",
+    "httpx": "0.28.1"
+  },
+  "warning": "Starlette reports the existing httpx TestClient integration is deprecated; tests pass.",
+  "not_proven": [
+    "student eligibility",
+    "independent completion",
+    "media rights",
+    "organizer approval"
+  ]
+}

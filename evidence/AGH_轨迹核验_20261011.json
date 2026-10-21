@@ -1,0 +1,50 @@
+[
+  {
+    "case": "clean_a",
+    "run_id": "69f40ac21827433a98ad5a231b92706c",
+    "session_id": "agnes:local:local-dev:cli:workspace:641810df9103ef6a",
+    "models": [
+      "agnes-3.0-flash"
+    ],
+    "trial_count": 647,
+    "ordered_trajectory_verified": true,
+    "reason": "Ordered Agnes and numerical-tool trajectory verified",
+    "sha256": "aa7a0e0ee32767b8c046f176386aafced3fffa0127c1524383677fb459b34dfd"
+  },
+  {
+    "case": "clean_b",
+    "run_id": "6316c87602d84c2fab5e20a6ed5bcad9",
+    "session_id": "agnes:local:local-dev:cli:workspace:0965fb416b1f8007",
+    "models": [
+      "agnes-3.0-flash"
+    ],
+    "trial_count": 643,
+    "ordered_trajectory_verified": true,
+    "reason": "Ordered Agnes and numerical-tool trajectory verified",
+    "sha256": "49cd04f19c074092b2584a80c047a4da202396edd2744cb20b2c6c2fba18ccf2"
+  },
+  {
+    "case": "noisy",
+    "run_id": "4ca3625df4674a17a83544d289127441",
+    "session_id": "agnes:local:local-dev:cli:workspace:1d0386f57163af3a",
+    "models": [
+      "agnes-3.0-flash"
+    ],
+    "trial_count": 351,
+    "ordered_trajectory_verified": true,
+    "reason": "Ordered Agnes and numerical-tool trajectory verified",
+    "sha256": "98c2c8eb972c91c52aa0af7a65266633ae7f760a358bd92cce831c6618601ec5"
+  },
+  {
+    "case": "mismatch",
+    "run_id": "93dd00121a0c415681d5d3c0d66770fa",
+    "session_id": "agnes:local:local-dev:cli:workspace:d351103dc1e72d2a",
+    "models": [
+      "agnes-3.0-flash"
+    ],
+    "trial_count": 279,
+    "ordered_trajectory_verified": true,
+    "reason": "Ordered Agnes and numerical-tool trajectory verified",
+    "sha256": "59ed92c87d3408bff92901cd4983e95dfcb65dab96bc08d238537bdab9db1594"
+  }
+]

@@ -1,0 +1,37 @@
+# Python environments and generated caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Local credentials and machine settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local presentation work and media
+.codex-ppt-edit/
+.ppt-*/
+output/
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.pptx
+*.zip
+
+# New manual demo output; archived runs/ and benchmarks/ remain tracked
+nano_chameleon/demo_runs/
+nano_chameleon/manual_reports/

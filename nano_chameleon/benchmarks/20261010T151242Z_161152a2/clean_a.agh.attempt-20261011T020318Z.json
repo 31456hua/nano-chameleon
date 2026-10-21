@@ -1,0 +1,15 @@
+{
+  "protocol": "AGH official SDK; existing verified local daemon",
+  "started_at": "2026-10-11T02:02:59.055861+00:00",
+  "run_id": "69f40ac21827433a98ad5a231b92706c",
+  "profile": "local-dev",
+  "complete": false,
+  "events": [],
+  "approvals": [],
+  "models": [],
+  "session_id": null,
+  "scenario_id": "clean_a",
+  "last_runtime_note": "Node.js v24.20.0",
+  "failure": "ACP process closed",
+  "finished_at": "2026-10-11T02:03:00.136185+00:00"
+}

@@ -1,0 +1,55 @@
+C:\Users\hua31456\Desktop\U226_范式_提交准备_20261011\本科生组-U226-范式-花豫苏\nano_chameleon\test_demo.py:6: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient
+test_evidence_needs_matching_scenario_and_explicit_complete_flag (test_benchmark.BenchmarkTests.test_evidence_needs_matching_scenario_and_explicit_complete_flag) ... ok
+test_private_paths_cannot_be_nested_in_agent_workspace (test_benchmark.BenchmarkTests.test_private_paths_cannot_be_nested_in_agent_workspace) ... ok
+test_public_manifest_excludes_truth_and_preserves_old_runs (test_benchmark.BenchmarkTests.test_public_manifest_excludes_truth_and_preserves_old_runs) ... ok
+test_scale_is_signal_relative_and_scoring_rejects_wrong_targets (test_benchmark.BenchmarkTests.test_scale_is_signal_relative_and_scoring_rejects_wrong_targets) ... ok
+test_scenarios_are_deterministic_and_use_exact_engine_split (test_benchmark.BenchmarkTests.test_scenarios_are_deterministic_and_use_exact_engine_split) ... ok
+test_active_search_blocks_validation (test_demo.DemoTests.test_active_search_blocks_validation) ... ok
+test_archived_agh_and_failure_are_honest (test_demo.DemoTests.test_archived_agh_and_failure_are_honest) ... ok
+test_colour_and_optical_depth (test_demo.DemoTests.test_colour_and_optical_depth) ... ok
+test_invalid_inputs_and_paths (test_demo.DemoTests.test_invalid_inputs_and_paths) ... ok
+test_local_authorization (test_demo.DemoTests.test_local_authorization) ... ok
+test_preview_and_seal (test_demo.DemoTests.test_preview_and_seal) ... ok
+test_search_uses_training_and_logs (test_demo.DemoTests.test_search_uses_training_and_logs) ... ok
+test_candidate_bounds_and_nonfinite_values (test_dispatch.DispatchPolicyTests.test_candidate_bounds_and_nonfinite_values) ... ok
+test_final_validation_requires_feedback_trial_after_search (test_dispatch.DispatchPolicyTests.test_final_validation_requires_feedback_trial_after_search) ... ok
+test_rejects_unknown_tools_foreign_ids_and_extra_arguments (test_dispatch.DispatchPolicyTests.test_rejects_unknown_tools_foreign_ids_and_extra_arguments) ... ok
+test_report_requires_successful_validation (test_dispatch.DispatchPolicyTests.test_report_requires_successful_validation) ... ok
+test_result_parser_and_redaction (test_dispatch.DispatchPolicyTests.test_result_parser_and_redaction) ... ok
+test_search_budget_matches_predeclared_baseline (test_dispatch.DispatchPolicyTests.test_search_budget_matches_predeclared_baseline) ... ok
+test_search_requires_initial_feedback_and_fit_stops_after_validation (test_dispatch.DispatchPolicyTests.test_search_requires_initial_feedback_and_fit_stops_after_validation) ... ok
+test_complete_ordered_trace_passes (test_dispatch.EvidenceAuditTests.test_complete_ordered_trace_passes) ... ok
+test_discovery_only_allows_native_read_only_catalog_actions (test_dispatch.EvidenceAuditTests.test_discovery_only_allows_native_read_only_catalog_actions) ... ok
+test_failure_flags_non_agnes_requests_and_foreign_ids_fail (test_dispatch.EvidenceAuditTests.test_failure_flags_non_agnes_requests_and_foreign_ids_fail) ... ok
+test_reordered_or_duplicate_events_and_missing_export_fail (test_dispatch.EvidenceAuditTests.test_reordered_or_duplicate_events_and_missing_export_fail) ... ok
+test_holdout_is_hidden_and_seals_after_validation (test_engine.ExperimentTests.test_holdout_is_hidden_and_seals_after_validation) ... ok
+test_optimizer_recovers_resonant_synthetic_target (test_engine.ExperimentTests.test_optimizer_recovers_resonant_synthetic_target) ... ok
+test_tool_call_chain (test_mcp.McpTransportTests.test_tool_call_chain) ... Processing request of type ListToolsRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+ok
+test_create_rejects_invalid_medium_without_writing (test_validation.ValidationTests.test_create_rejects_invalid_medium_without_writing) ... ok
+test_csv_rejects_invalid_values_without_creating_experiment (test_validation.ValidationTests.test_csv_rejects_invalid_values_without_creating_experiment) ... ok
+test_csv_requires_named_columns (test_validation.ValidationTests.test_csv_requires_named_columns) ... ok
+test_duplicate_wavelengths_rejected_even_when_unsorted (test_validation.ValidationTests.test_duplicate_wavelengths_rejected_even_when_unsorted) ... ok
+test_holdout_is_hidden_then_finalization_is_idempotent_and_sealed (test_validation.ValidationTests.test_holdout_is_hidden_then_finalization_is_idempotent_and_sealed) ... ok
+test_invalid_ids_cannot_select_external_paths (test_validation.ValidationTests.test_invalid_ids_cannot_select_external_paths) ... ok
+test_invalid_trial_does_not_mutate_record (test_validation.ValidationTests.test_invalid_trial_does_not_mutate_record) ... ok
+test_large_finite_target_has_finite_rmse_and_strict_json (test_validation.ValidationTests.test_large_finite_target_has_finite_rmse_and_strict_json) ... ok
+test_nonfinite_solver_output_rejected_without_recording (test_validation.ValidationTests.test_nonfinite_solver_output_rejected_without_recording) ... ok
+test_optimizer_forwards_bounded_generations_and_serial_execution (test_validation.ValidationTests.test_optimizer_forwards_bounded_generations_and_serial_execution) ... ok
+test_optimizer_rejects_fractional_and_boolean_generations_before_solver (test_validation.ValidationTests.test_optimizer_rejects_fractional_and_boolean_generations_before_solver) ... ok
+test_optimizer_rejects_out_of_range_generations_before_solver (test_validation.ValidationTests.test_optimizer_rejects_out_of_range_generations_before_solver) ... ok
+test_sample_count_and_sorted_order (test_validation.ValidationTests.test_sample_count_and_sorted_order) ... ok
+test_spectrum_rejects_invalid_wavelength_arrays (test_validation.ValidationTests.test_spectrum_rejects_invalid_wavelength_arrays) ... ok
+test_spectrum_rejects_nonfinite_and_out_of_bounds_parameters (test_validation.ValidationTests.test_spectrum_rejects_nonfinite_and_out_of_bounds_parameters) ... ok
+test_validation_requires_trial_and_report_requires_validation (test_validation.ValidationTests.test_validation_requires_trial_and_report_requires_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 28.480s
+
+OK

@@ -1,0 +1,142 @@
+{
+  "protocol": "AGH official ACP stdio",
+  "started_at": "2026-10-10T15:24:52.776923+00:00",
+  "run_id": "69f40ac21827433a98ad5a231b92706c",
+  "profile": "local-dev",
+  "complete": false,
+  "events": [
+    {
+      "seq": 13,
+      "type": "request/header",
+      "ts": "2026-10-10T15:24:54.611Z",
+      "model": "agnes-3.0-flash"
+    },
+    {
+      "seq": 16,
+      "type": "assistant/message",
+      "ts": "2026-10-10T15:25:02.237Z",
+      "text": ""
+    },
+    {
+      "seq": 17,
+      "type": "tool/call",
+      "ts": "2026-10-10T15:25:02.237Z",
+      "tool": "unapproved_tool",
+      "tool_use_id": "t0-623ea510902f8b811659ea818a8c57ea"
+    },
+    {
+      "seq": 21,
+      "type": "tool/result",
+      "ts": "2026-10-10T15:25:02.255Z",
+      "tool": "unapproved_tool",
+      "tool_use_id": "t0-623ea510902f8b811659ea818a8c57ea",
+      "is_error": false,
+      "code": null
+    },
+    {
+      "seq": 30,
+      "type": "request/header",
+      "ts": "2026-10-10T15:25:02.272Z",
+      "model": "agnes-3.0-flash"
+    },
+    {
+      "seq": 33,
+      "type": "assistant/message",
+      "ts": "2026-10-10T15:25:04.022Z",
+      "text": ""
+    },
+    {
+      "seq": 34,
+      "type": "tool/call",
+      "ts": "2026-10-10T15:25:04.022Z",
+      "tool": "unapproved_tool",
+      "tool_use_id": "t1-bf145b767b10a3935bf16bc59deca9a5"
+    },
+    {
+      "seq": 38,
+      "type": "tool/result",
+      "ts": "2026-10-10T15:25:04.031Z",
+      "tool": "unapproved_tool",
+      "tool_use_id": "t1-bf145b767b10a3935bf16bc59deca9a5",
+      "is_error": false,
+      "code": null
+    },
+    {
+      "seq": 47,
+      "type": "request/header",
+      "ts": "2026-10-10T15:25:04.043Z",
+      "model": "agnes-3.0-flash"
+    },
+    {
+      "seq": 50,
+      "type": "assistant/message",
+      "ts": "2026-10-10T15:25:07.812Z",
+      "text": ""
+    },
+    {
+      "seq": 51,
+      "type": "tool/call",
+      "ts": "2026-10-10T15:25:07.812Z",
+      "tool": "unapproved_tool",
+      "tool_use_id": "t2-25cdcc5392c0497366e5e6ebc51576a3"
+    },
+    {
+      "seq": 55,
+      "type": "tool/result",
+      "ts": "2026-10-10T15:25:07.822Z",
+      "tool": "unapproved_tool",
+      "tool_use_id": "t2-25cdcc5392c0497366e5e6ebc51576a3",
+      "is_error": false,
+      "code": null
+    },
+    {
+      "seq": 64,
+      "type": "request/header",
+      "ts": "2026-10-10T15:25:07.835Z",
+      "model": "agnes-3.0-flash"
+    },
+    {
+      "seq": 67,
+      "type": "assistant/message",
+      "ts": "2026-10-10T15:25:22.740Z",
+      "text": ""
+    },
+    {
+      "seq": 68,
+      "type": "tool/call",
+      "ts": "2026-10-10T15:25:22.740Z",
+      "tool": "unapproved_tool",
+      "tool_use_id": "t3-9a9390787e005f5075213a05a394b9e6"
+    },
+    {
+      "seq": 72,
+      "type": "tool/result",
+      "ts": "2026-10-10T15:25:22.749Z",
+      "tool": "unapproved_tool",
+      "tool_use_id": "t3-9a9390787e005f5075213a05a394b9e6",
+      "is_error": false,
+      "code": null
+    },
+    {
+      "seq": 81,
+      "type": "request/header",
+      "ts": "2026-10-10T15:25:22.761Z",
+      "model": "agnes-3.0-flash"
+    },
+    {
+      "seq": 87,
+      "type": "turn/end",
+      "ts": "2026-10-10T15:25:41.769Z",
+      "reason": "error"
+    }
+  ],
+  "approvals": [],
+  "models": [
+    "agnes-3.0-flash"
+  ],
+  "session_id": "agnes:local:local-dev:cli:workspace:641810df9103ef6a",
+  "scenario_id": "clean_a",
+  "session_url": "http://127.0.0.1:4177/?session=agnes%3Alocal%3Alocal-dev%3Acli%3Aworkspace%3A641810df9103ef6a",
+  "failure": "AGH session/prompt: -32603 INTERNAL_ERROR",
+  "finished_at": "2026-10-10T15:25:41.770526+00:00"
+}

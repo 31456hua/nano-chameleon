@@ -1,0 +1,76 @@
+{
+  "suite_id": "20261010T151242Z_161152a2",
+  "created_utc": "20261010T151242Z",
+  "normalization": "RMSE / RMS(observed training Qsca), with denominator floor 1e-8",
+  "agent_workspace": "D:\\chat Gpt\\2026-10-10\\miepython-https-github-com-scottprahl-miepython-3\\work\\benchmark_agh_workspace\\20261010T151242Z_161152a2",
+  "protocol": {
+    "training_samples": 35,
+    "held_out_samples": 8,
+    "split": "sorted index 2,7,12,...,37 held out; endpoints remain in training",
+    "baseline": "SciPy differential_evolution physics optimizer, 15 generations, seeds 7/19/43; not AGH",
+    "agent_budget": {
+      "search_calls": 1,
+      "generations": 15,
+      "manual_candidates_max": 12
+    },
+    "file_access": "Use MCP only. Private targets and experiment JSON are outside this workspace; this is workflow isolation, not an OS security sandbox."
+  },
+  "cases": [
+    {
+      "case_id": "clean_a",
+      "scenario_id": "clean_a",
+      "name": "Clean target A",
+      "scenario": "Clean target A",
+      "run_id": "69f40ac21827433a98ad5a231b92706c",
+      "agh_run_id": "69f40ac21827433a98ad5a231b92706c",
+      "status": "prepared; no AGH execution claimed",
+      "criteria": {
+        "holdout_nrmse_limit": 0.01,
+        "interpretation": "Held-out NRMSE <=1% for spectrum recovery. Parameter errors are diagnostics only; finite spectra can admit weakly identified parameters, especially near low-contrast bounds."
+      },
+      "task": "Nano Chameleon benchmark case clean_a; experiment ID 69f40ac21827433a98ad5a231b92706c. Use only the nano-chameleon MCP tools. First inspect_experiment, state the constant-index sphere model and bounds, then plan and execute at least two simulate_candidate calls. Explain how their training errors and curves inform the next decision. Call search_candidates once with generations=15 and seed=7. Design at least one subsequent simulate_candidate based on that feedback, then validate_unseen_wavelengths exactly once and export_experiment_report. Do not read source files, raw CSVs, runs/, benchmark private files, numerical baseline reports, or held-out targets. Use training data only until validation. Report measured training and held-out errors and discuss non-uniqueness, noise or model inadequacy where supported. Do not claim exact parameters from a good spectral fit alone. Keep the real AGH model/session/tool trajectory as evidence; the search_candidates tool is a physics optimizer and its calls are not separate Agnes model calls. Maximum one search (15 generations), 12 manual candidate trials, one validation, and one report export."
+    },
+    {
+      "case_id": "clean_b",
+      "scenario_id": "clean_b",
+      "name": "Clean target B",
+      "scenario": "Clean target B",
+      "run_id": "6316c87602d84c2fab5e20a6ed5bcad9",
+      "agh_run_id": "6316c87602d84c2fab5e20a6ed5bcad9",
+      "status": "prepared; no AGH execution claimed",
+      "criteria": {
+        "holdout_nrmse_limit": 0.01,
+        "interpretation": "Held-out NRMSE <=1% for spectrum recovery. Parameter errors are diagnostics only; finite spectra can admit weakly identified parameters, especially near low-contrast bounds."
+      },
+      "task": "Nano Chameleon benchmark case clean_b; experiment ID 6316c87602d84c2fab5e20a6ed5bcad9. Use only the nano-chameleon MCP tools. First inspect_experiment, state the constant-index sphere model and bounds, then plan and execute at least two simulate_candidate calls. Explain how their training errors and curves inform the next decision. Call search_candidates once with generations=15 and seed=7. Design at least one subsequent simulate_candidate based on that feedback, then validate_unseen_wavelengths exactly once and export_experiment_report. Do not read source files, raw CSVs, runs/, benchmark private files, numerical baseline reports, or held-out targets. Use training data only until validation. Report measured training and held-out errors and discuss non-uniqueness, noise or model inadequacy where supported. Do not claim exact parameters from a good spectral fit alone. Keep the real AGH model/session/tool trajectory as evidence; the search_candidates tool is a physics optimizer and its calls are not separate Agnes model calls. Maximum one search (15 generations), 12 manual candidate trials, one validation, and one report export."
+    },
+    {
+      "case_id": "noisy",
+      "scenario_id": "noisy",
+      "name": "Deterministic measurement noise",
+      "scenario": "Deterministic measurement noise",
+      "run_id": "4ca3625df4674a17a83544d289127441",
+      "agh_run_id": "4ca3625df4674a17a83544d289127441",
+      "status": "prepared; no AGH execution claimed",
+      "criteria": {
+        "holdout_nrmse_limit": 0.06,
+        "interpretation": "Observed held-out NRMSE <=6% (about three times the prescribed 2% signal-relative noise sigma). Recovering the random noise or exact parameters is not required."
+      },
+      "task": "Nano Chameleon benchmark case noisy; experiment ID 4ca3625df4674a17a83544d289127441. Use only the nano-chameleon MCP tools. First inspect_experiment, state the constant-index sphere model and bounds, then plan and execute at least two simulate_candidate calls. Explain how their training errors and curves inform the next decision. Call search_candidates once with generations=15 and seed=7. Design at least one subsequent simulate_candidate based on that feedback, then validate_unseen_wavelengths exactly once and export_experiment_report. Do not read source files, raw CSVs, runs/, benchmark private files, numerical baseline reports, or held-out targets. Use training data only until validation. Report measured training and held-out errors and discuss non-uniqueness, noise or model inadequacy where supported. Do not claim exact parameters from a good spectral fit alone. Keep the real AGH model/session/tool trajectory as evidence; the search_candidates tool is a physics optimizer and its calls are not separate Agnes model calls. Maximum one search (15 generations), 12 manual candidate trials, one validation, and one report export."
+    },
+    {
+      "case_id": "mismatch",
+      "scenario_id": "mismatch",
+      "name": "Dispersive model mismatch",
+      "scenario": "Dispersive model mismatch",
+      "run_id": "93dd00121a0c415681d5d3c0d66770fa",
+      "agh_run_id": "93dd00121a0c415681d5d3c0d66770fa",
+      "status": "prepared; no AGH execution claimed",
+      "criteria": {
+        "holdout_nrmse_limit": 0.05,
+        "interpretation": "Model adequacy diagnostic: <=5% held-out NRMSE supports this constant-index approximation on this grid; a miss is not evidence that the optimizer is defective. No constant n,k ground truth exists."
+      },
+      "task": "Nano Chameleon benchmark case mismatch; experiment ID 93dd00121a0c415681d5d3c0d66770fa. Use only the nano-chameleon MCP tools. First inspect_experiment, state the constant-index sphere model and bounds, then plan and execute at least two simulate_candidate calls. Explain how their training errors and curves inform the next decision. Call search_candidates once with generations=15 and seed=7. Design at least one subsequent simulate_candidate based on that feedback, then validate_unseen_wavelengths exactly once and export_experiment_report. Do not read source files, raw CSVs, runs/, benchmark private files, numerical baseline reports, or held-out targets. Use training data only until validation. Report measured training and held-out errors and discuss non-uniqueness, noise or model inadequacy where supported. Do not claim exact parameters from a good spectral fit alone. Keep the real AGH model/session/tool trajectory as evidence; the search_candidates tool is a physics optimizer and its calls are not separate Agnes model calls. Maximum one search (15 generations), 12 manual candidate trials, one validation, and one report export."
+    }
+  ]
+}

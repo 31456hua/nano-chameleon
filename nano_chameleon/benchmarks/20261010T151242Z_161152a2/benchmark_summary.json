@@ -1,0 +1,908 @@
+{
+  "suite_id": "20261010T151242Z_161152a2",
+  "normalization": "RMSE / RMS(observed training Qsca), with denominator floor 1e-8",
+  "versions": {
+    "python": "3.11.7",
+    "miepython": "3.3.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "source_sha256": {
+    "engine.py": "88200cc62e0592723c3bc0512da3d4e1c3cd29797878509f3bf34cbca4a24e67",
+    "benchmark.py": "0836719e562426e0eaf5ee182afd022136ff8a64cbf9ee50aa58823a5402cc29"
+  },
+  "baseline_batches": [
+    {
+      "batch_id": "191ff75d",
+      "seeds": [
+        7,
+        19,
+        43
+      ],
+      "generations": 15,
+      "polish": true,
+      "popsize": 5,
+      "planned_runs": 18,
+      "algorithm": "scipy.optimize.differential_evolution",
+      "kind": "physics optimizer baseline",
+      "runtime_source_sha256": {
+        "engine.py": "88200cc62e0592723c3bc0512da3d4e1c3cd29797878509f3bf34cbca4a24e67",
+        "benchmark.py": "0836719e562426e0eaf5ee182afd022136ff8a64cbf9ee50aa58823a5402cc29"
+      }
+    }
+  ],
+  "results": [
+    {
+      "case_id": "clean_a",
+      "run_id": "664c3a85590c491b972f40f3f3a43d1b",
+      "seed": 7,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 3.903090825640612e-07,
+      "holdout_rmse": 2.90665668507202e-07,
+      "normalization_scale": 0.9935379488265715,
+      "train_nrmse": 3.92847684404043e-07,
+      "holdout_nrmse": 2.925561815233085e-07,
+      "limit_nrmse": 0.01,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 183.46967797908744,
+        "n_real": 1.8732031600373682,
+        "k": 0.026801249606068393
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 0.00032202091256294807,
+          "fraction_of_search_range": 7.156020279176624e-07
+        },
+        "n_real": {
+          "absolute": 3.16003736822168e-06,
+          "fraction_of_search_range": 1.8057356389838174e-06
+        },
+        "k": {
+          "absolute": 1.2496060683916954e-06,
+          "fraction_of_search_range": 3.5703030525477012e-06
+        }
+      },
+      "latent_holdout_nrmse": 2.925561815233085e-07,
+      "trial_count": 644,
+      "elapsed_seconds": 15.75821839999844
+    },
+    {
+      "case_id": "clean_a",
+      "run_id": "13867f5c39bd4a59a6f862a429a9b236",
+      "seed": 19,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 3.387016192812956e-07,
+      "holdout_rmse": 3.3926753876549794e-07,
+      "normalization_scale": 0.9935379488265715,
+      "train_nrmse": 3.409045620062351e-07,
+      "holdout_nrmse": 3.414741622765325e-07,
+      "limit_nrmse": 0.01,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 183.47034606768312,
+        "n_real": 1.873196714742535,
+        "k": 0.026798936499193005
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 0.000346067683125284,
+          "fraction_of_search_range": 7.690392958339645e-07
+        },
+        "n_real": {
+          "absolute": 3.2852574649577804e-06,
+          "fraction_of_search_range": 1.8772899799758747e-06
+        },
+        "k": {
+          "absolute": 1.063500806995632e-06,
+          "fraction_of_search_range": 3.0385737342732344e-06
+        }
+      },
+      "latent_holdout_nrmse": 3.4147416227653255e-07,
+      "trial_count": 588,
+      "elapsed_seconds": 13.752001900000323
+    },
+    {
+      "case_id": "clean_a",
+      "run_id": "be67066bbdd141f58ab7df6a2dd5c6cf",
+      "seed": 43,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 4.2841917769968437e-07,
+      "holdout_rmse": 3.791824646428312e-07,
+      "normalization_scale": 0.9935379488265715,
+      "train_nrmse": 4.312056506806543e-07,
+      "holdout_nrmse": 3.816486980599671e-07,
+      "limit_nrmse": 0.01,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 183.47042598242513,
+        "n_real": 1.8731959013760113,
+        "k": 0.026798533837940553
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 0.00042598242512781326,
+          "fraction_of_search_range": 9.466276113951406e-07
+        },
+        "n_real": {
+          "absolute": 4.098623988646466e-06,
+          "fraction_of_search_range": 2.3420708506551236e-06
+        },
+        "k": {
+          "absolute": 1.4661620594477731e-06,
+          "fraction_of_search_range": 4.189034455565066e-06
+        }
+      },
+      "latent_holdout_nrmse": 3.8164869805996715e-07,
+      "trial_count": 468,
+      "elapsed_seconds": 9.639145899996947
+    },
+    {
+      "case_id": "clean_b",
+      "run_id": "3e659160ddb04c2cabb87b11571a1bce",
+      "seed": 7,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 5.2490059103499516e-08,
+      "holdout_rmse": 4.004924398945468e-08,
+      "normalization_scale": 3.4025361548021436,
+      "train_nrmse": 1.5426745437934015e-08,
+      "holdout_nrmse": 1.177040953199909e-08,
+      "limit_nrmse": 0.01,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 317.8300047862823,
+        "n_real": 2.4136999785729065,
+        "k": 0.07309999529791414
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 4.786282318036683e-06,
+          "fraction_of_search_range": 1.0636182928970407e-08
+        },
+        "n_real": {
+          "absolute": 2.1427093432890842e-08,
+          "fraction_of_search_range": 1.224405339022334e-08
+        },
+        "k": {
+          "absolute": 4.702085859564775e-09,
+          "fraction_of_search_range": 1.343453102732793e-08
+        }
+      },
+      "latent_holdout_nrmse": 1.1770409531999087e-08,
+      "trial_count": 640,
+      "elapsed_seconds": 15.586206299998594
+    },
+    {
+      "case_id": "clean_b",
+      "run_id": "c1385c04ad1d4a71b9e5a6998b5bc09b",
+      "seed": 19,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 4.7428362557883635e-08,
+      "holdout_rmse": 4.3997453292364455e-08,
+      "normalization_scale": 3.4025361548021436,
+      "train_nrmse": 1.393912082049326e-08,
+      "holdout_nrmse": 1.2930782008082114e-08,
+      "limit_nrmse": 0.01,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 317.83000512816886,
+        "n_real": 2.4136999728016946,
+        "k": 0.07309999914003441
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 5.1281688797644165e-06,
+          "fraction_of_search_range": 1.1395930843920926e-08
+        },
+        "n_real": {
+          "absolute": 2.7198305385667254e-08,
+          "fraction_of_search_range": 1.5541888791809862e-08
+        },
+        "k": {
+          "absolute": 8.599655848540166e-10,
+          "fraction_of_search_range": 2.4570445281543336e-09
+        }
+      },
+      "latent_holdout_nrmse": 1.2930782008082114e-08,
+      "trial_count": 632,
+      "elapsed_seconds": 15.123676700000942
+    },
+    {
+      "case_id": "clean_b",
+      "run_id": "0fa88bc412004a7fa064c700871893ff",
+      "seed": 43,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 5.5458225497060256e-08,
+      "holdout_rmse": 5.778319014975279e-08,
+      "normalization_scale": 3.4025361548021436,
+      "train_nrmse": 1.629908485139525e-08,
+      "holdout_nrmse": 1.6982388289453125e-08,
+      "limit_nrmse": 0.01,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 317.829998255852,
+        "n_real": 2.41370002080813,
+        "k": 0.07310000330723893
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 1.744147994031664e-06,
+          "fraction_of_search_range": 3.8758844311814755e-09
+        },
+        "n_real": {
+          "absolute": 2.0808129885807602e-08,
+          "fraction_of_search_range": 1.1890359934747202e-08
+        },
+        "k": {
+          "absolute": 3.3072389271637803e-09,
+          "fraction_of_search_range": 9.449254077610802e-09
+        }
+      },
+      "latent_holdout_nrmse": 1.6982388289453122e-08,
+      "trial_count": 636,
+      "elapsed_seconds": 14.176500000001397
+    },
+    {
+      "case_id": "lower_boundary",
+      "run_id": "b6c7edeecab847d1be0d270ddcf3fafa",
+      "seed": 7,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 1.9730101555608904e-08,
+      "holdout_rmse": 1.8132653683777008e-08,
+      "normalization_scale": 5.4876611733946255e-05,
+      "train_nrmse": 0.00035953570988064506,
+      "holdout_nrmse": 0.00033042589749688,
+      "limit_nrmse": 0.01,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 53.550281868766874,
+        "n_real": 1.0566998430551156,
+        "k": 0.025108031281004233
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 0.15971813123312728,
+          "fraction_of_search_range": 0.0003549291805180606
+        },
+        "n_real": {
+          "absolute": 0.004600156944884359,
+          "fraction_of_search_range": 0.0026286611113624913
+        },
+        "k": {
+          "absolute": 0.018408031281004232,
+          "fraction_of_search_range": 0.05259437508858352
+        }
+      },
+      "latent_holdout_nrmse": 0.00033042589749688006,
+      "trial_count": 288,
+      "elapsed_seconds": 6.263344799997867
+    },
+    {
+      "case_id": "lower_boundary",
+      "run_id": "3e5908db398547ee9b8eec019f43d74d",
+      "seed": 19,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 5.835651371936127e-08,
+      "holdout_rmse": 5.432986022184419e-08,
+      "normalization_scale": 5.4876611733946255e-05,
+      "train_nrmse": 0.0010634132078395499,
+      "holdout_nrmse": 0.000990036711545661,
+      "limit_nrmse": 0.01,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 55.10380890743111,
+        "n_real": 1.0548433461177023,
+        "k": 0.02075194740400804
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 1.393808907431108,
+          "fraction_of_search_range": 0.0030973531276246844
+        },
+        "n_real": {
+          "absolute": 0.006456653882297658,
+          "fraction_of_search_range": 0.003689516504170091
+        },
+        "k": {
+          "absolute": 0.014051947404008037,
+          "fraction_of_search_range": 0.04014842115430868
+        }
+      },
+      "latent_holdout_nrmse": 0.000990036711545661,
+      "trial_count": 268,
+      "elapsed_seconds": 4.376591899999767
+    },
+    {
+      "case_id": "lower_boundary",
+      "run_id": "e0950606b41e4ed0bc1f14b502803c28",
+      "seed": 43,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 1.4667319347484386e-07,
+      "holdout_rmse": 1.3679011438837208e-07,
+      "normalization_scale": 5.4876611733946255e-05,
+      "train_nrmse": 0.0026727815154832697,
+      "holdout_nrmse": 0.0024926851360933195,
+      "limit_nrmse": 0.01,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 58.897740637896284,
+        "n_real": 1.051365258506328,
+        "k": 0.0035619865404250147
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 5.187740637896283,
+          "fraction_of_search_range": 0.011528312528658408
+        },
+        "n_real": {
+          "absolute": 0.009934741493671906,
+          "fraction_of_search_range": 0.00567699513924109
+        },
+        "k": {
+          "absolute": 0.0031380134595749855,
+          "fraction_of_search_range": 0.008965752741642817
+        }
+      },
+      "latent_holdout_nrmse": 0.0024926851360933195,
+      "trial_count": 260,
+      "elapsed_seconds": 3.537489499998628
+    },
+    {
+      "case_id": "upper_boundary",
+      "run_id": "d6ec3a29543b49c09cc741dfef0970f6",
+      "seed": 7,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 0.09448467262711514,
+      "holdout_rmse": 0.06676422155161062,
+      "normalization_scale": 1.338015417322738,
+      "train_nrmse": 0.07061553357596688,
+      "holdout_nrmse": 0.049897946381814114,
+      "limit_nrmse": 0.01,
+      "outcome": "miss",
+      "parameters": {
+        "diameter_nm": 479.594257217915,
+        "n_real": 1.5829779639796624,
+        "k": 0.31413306413026015
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 14.695742782085006,
+          "fraction_of_search_range": 0.03265720618241112
+        },
+        "n_real": {
+          "absolute": 1.1801220360203377,
+          "fraction_of_search_range": 0.6743554491544788
+        },
+        "k": {
+          "absolute": 0.029566935869739852,
+          "fraction_of_search_range": 0.08447695962782815
+        }
+      },
+      "latent_holdout_nrmse": 0.049897946381814114,
+      "trial_count": 272,
+      "elapsed_seconds": 3.8153853000003437
+    },
+    {
+      "case_id": "upper_boundary",
+      "run_id": "e7180ebe6fa049e3915709620865a005",
+      "seed": 19,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 0.09434193968818032,
+      "holdout_rmse": 0.06662713592763703,
+      "normalization_scale": 1.338015417322738,
+      "train_nrmse": 0.07050885846812663,
+      "holdout_nrmse": 0.049795491939063456,
+      "limit_nrmse": 0.01,
+      "outcome": "miss",
+      "parameters": {
+        "diameter_nm": 460.35151614258433,
+        "n_real": 1.6105862536788451,
+        "k": 0.332620125946867
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 33.93848385741569,
+          "fraction_of_search_range": 0.07541885301647931
+        },
+        "n_real": {
+          "absolute": 1.152513746321155,
+          "fraction_of_search_range": 0.6585792836120886
+        },
+        "k": {
+          "absolute": 0.011079874053132988,
+          "fraction_of_search_range": 0.031656783008951396
+        }
+      },
+      "latent_holdout_nrmse": 0.04979549193906346,
+      "trial_count": 272,
+      "elapsed_seconds": 4.471802799998841
+    },
+    {
+      "case_id": "upper_boundary",
+      "run_id": "675a67633bd64fc5b3fa8d6d45cfeb1d",
+      "seed": 43,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 4.2352655951560575e-09,
+      "holdout_rmse": 4.153582296249786e-09,
+      "normalization_scale": 1.338015417322738,
+      "train_nrmse": 3.165333926891878e-09,
+      "holdout_nrmse": 3.1042858269606283e-09,
+      "limit_nrmse": 0.01,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 494.29000263660845,
+        "n_real": 2.763099990301382,
+        "k": 0.34370000377254833
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 2.636608428474574e-06,
+          "fraction_of_search_range": 5.859129841054609e-09
+        },
+        "n_real": {
+          "absolute": 9.698617908782126e-09,
+          "fraction_of_search_range": 5.54206737644693e-09
+        },
+        "k": {
+          "absolute": 3.772548329283865e-09,
+          "fraction_of_search_range": 1.0778709512239615e-08
+        }
+      },
+      "latent_holdout_nrmse": 3.1042858269606283e-09,
+      "trial_count": 564,
+      "elapsed_seconds": 11.595202399999835
+    },
+    {
+      "case_id": "noisy",
+      "run_id": "94e813596f354ca9807f573ef96c1068",
+      "seed": 7,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 0.07442980409682318,
+      "holdout_rmse": 0.06747001851664153,
+      "normalization_scale": 3.103151883728596,
+      "train_nrmse": 0.023985227563979868,
+      "holdout_nrmse": 0.02174241579035211,
+      "limit_nrmse": 0.06,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 249.78009386746263,
+        "n_real": 2.154803226914861,
+        "k": 0.037108503572374316
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 1.1500938674626298,
+          "fraction_of_search_range": 0.002555764149916955
+        },
+        "n_real": {
+          "absolute": 0.01259677308513929,
+          "fraction_of_search_range": 0.007198156048651024
+        },
+        "k": {
+          "absolute": 0.0010914964276256822,
+          "fraction_of_search_range": 0.0031185612217876635
+        }
+      },
+      "latent_holdout_nrmse": 0.005693000239849896,
+      "trial_count": 348,
+      "elapsed_seconds": 5.502267400002893
+    },
+    {
+      "case_id": "noisy",
+      "run_id": "4a3d2267758e44e2b2911cd56700716d",
+      "seed": 19,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 0.07442980402080097,
+      "holdout_rmse": 0.06747163323361732,
+      "normalization_scale": 3.103151883728596,
+      "train_nrmse": 0.023985227539481485,
+      "holdout_nrmse": 0.021742936137739637,
+      "limit_nrmse": 0.06,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 249.78004145047765,
+        "n_real": 2.154803770310483,
+        "k": 0.03710886186137147
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 1.1500414504776586,
+          "fraction_of_search_range": 0.00255564766772813
+        },
+        "n_real": {
+          "absolute": 0.012596229689517013,
+          "fraction_of_search_range": 0.007197845536866866
+        },
+        "k": {
+          "absolute": 0.0010911381386285307,
+          "fraction_of_search_range": 0.0031175375389386594
+        }
+      },
+      "latent_holdout_nrmse": 0.0056933234575753736,
+      "trial_count": 352,
+      "elapsed_seconds": 5.9378785000008065
+    },
+    {
+      "case_id": "noisy",
+      "run_id": "6da18c3fe57542bbb7cba2413f2cf01b",
+      "seed": 43,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 0.07442980402081795,
+      "holdout_rmse": 0.06747171377791757,
+      "normalization_scale": 3.103151883728596,
+      "train_nrmse": 0.023985227539486956,
+      "holdout_nrmse": 0.02174296209338192,
+      "limit_nrmse": 0.06,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 249.78005928278145,
+        "n_real": 2.154803630425258,
+        "k": 0.03710884854391545
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 1.1500592827814557,
+          "fraction_of_search_range": 0.0025556872950699017
+        },
+        "n_real": {
+          "absolute": 0.012596369574742194,
+          "fraction_of_search_range": 0.0071979254712812545
+        },
+        "k": {
+          "absolute": 0.0010911514560845506,
+          "fraction_of_search_range": 0.003117575588813002
+        }
+      },
+      "latent_holdout_nrmse": 0.005693356112575088,
+      "trial_count": 348,
+      "elapsed_seconds": 5.673944899997878
+    },
+    {
+      "case_id": "mismatch",
+      "run_id": "f0c294303b33479b9ce816be3ea3feab",
+      "seed": 7,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 0.28414252155270586,
+      "holdout_rmse": 0.24512735863322258,
+      "normalization_scale": 2.2521915096441036,
+      "train_nrmse": 0.12616268214136314,
+      "holdout_nrmse": 0.10883948260330585,
+      "limit_nrmse": 0.05,
+      "outcome": "inadequate",
+      "parameters": {
+        "diameter_nm": 229.0986123364185,
+        "n_real": 2.095912434302892,
+        "k": 0.08625253138898437
+      },
+      "parameter_errors": null,
+      "latent_holdout_nrmse": 0.10883948260330585,
+      "trial_count": 276,
+      "elapsed_seconds": 4.370690799998556
+    },
+    {
+      "case_id": "mismatch",
+      "run_id": "055623c1563a4f41983e7447752f6c74",
+      "seed": 19,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 0.2840845519672667,
+      "holdout_rmse": 0.24818429259310962,
+      "normalization_scale": 2.2521915096441036,
+      "train_nrmse": 0.12613694295124944,
+      "holdout_nrmse": 0.11019679788790619,
+      "limit_nrmse": 0.05,
+      "outcome": "inadequate",
+      "parameters": {
+        "diameter_nm": 227.06449843409547,
+        "n_real": 2.114057299315221,
+        "k": 0.09043662286171793
+      },
+      "parameter_errors": null,
+      "latent_holdout_nrmse": 0.11019679788790619,
+      "trial_count": 356,
+      "elapsed_seconds": 6.813021399997524
+    },
+    {
+      "case_id": "mismatch",
+      "run_id": "06596cae2d344c92b5110c945606e361",
+      "seed": 43,
+      "generations": 15,
+      "batch_id": "191ff75d",
+      "kind": "physics optimizer baseline",
+      "status": "complete",
+      "train_rmse": 0.284084551982455,
+      "holdout_rmse": 0.24818545971320574,
+      "normalization_scale": 2.2521915096441036,
+      "train_nrmse": 0.12613694295799327,
+      "holdout_nrmse": 0.11019731610320499,
+      "limit_nrmse": 0.05,
+      "outcome": "inadequate",
+      "parameters": {
+        "diameter_nm": 227.06371795726977,
+        "n_real": 2.1140646303740667,
+        "k": 0.09043798276744858
+      },
+      "parameter_errors": null,
+      "latent_holdout_nrmse": 0.11019731610320499,
+      "trial_count": 364,
+      "elapsed_seconds": 6.9376980000015465
+    },
+    {
+      "case_id": "clean_a",
+      "run_id": "69f40ac21827433a98ad5a231b92706c",
+      "train_rmse": 3.903090825640612e-07,
+      "holdout_rmse": 2.90665668507202e-07,
+      "normalization_scale": 0.9935379488265715,
+      "train_nrmse": 3.92847684404043e-07,
+      "holdout_nrmse": 2.925561815233085e-07,
+      "limit_nrmse": 0.01,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 183.46967797908744,
+        "n_real": 1.8732031600373682,
+        "k": 0.026801249606068393
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 0.00032202091256294807,
+          "fraction_of_search_range": 7.156020279176624e-07
+        },
+        "n_real": {
+          "absolute": 3.16003736822168e-06,
+          "fraction_of_search_range": 1.8057356389838174e-06
+        },
+        "k": {
+          "absolute": 1.2496060683916954e-06,
+          "fraction_of_search_range": 3.5703030525477012e-06
+        }
+      },
+      "latent_holdout_nrmse": 2.925561815233085e-07,
+      "trial_count": 647,
+      "kind": "actual AGH",
+      "seed": null,
+      "status": "complete",
+      "protocol_complete": true,
+      "model": "agnes-3.0-flash",
+      "session_id": "agnes:local:local-dev:cli:workspace:641810df9103ef6a"
+    },
+    {
+      "case_id": "clean_b",
+      "run_id": "6316c87602d84c2fab5e20a6ed5bcad9",
+      "train_rmse": 5.2490059103499516e-08,
+      "holdout_rmse": 4.004924398945468e-08,
+      "normalization_scale": 3.4025361548021436,
+      "train_nrmse": 1.5426745437934015e-08,
+      "holdout_nrmse": 1.177040953199909e-08,
+      "limit_nrmse": 0.01,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 317.8300047862823,
+        "n_real": 2.4136999785729065,
+        "k": 0.07309999529791414
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 4.786282318036683e-06,
+          "fraction_of_search_range": 1.0636182928970407e-08
+        },
+        "n_real": {
+          "absolute": 2.1427093432890842e-08,
+          "fraction_of_search_range": 1.224405339022334e-08
+        },
+        "k": {
+          "absolute": 4.702085859564775e-09,
+          "fraction_of_search_range": 1.343453102732793e-08
+        }
+      },
+      "latent_holdout_nrmse": 1.1770409531999087e-08,
+      "trial_count": 643,
+      "kind": "actual AGH",
+      "seed": null,
+      "status": "complete",
+      "protocol_complete": true,
+      "model": "agnes-3.0-flash",
+      "session_id": "agnes:local:local-dev:cli:workspace:0965fb416b1f8007"
+    },
+    {
+      "case_id": "noisy",
+      "run_id": "4ca3625df4674a17a83544d289127441",
+      "train_rmse": 0.07442980409682318,
+      "holdout_rmse": 0.06747001851664153,
+      "normalization_scale": 3.103151883728596,
+      "train_nrmse": 0.023985227563979868,
+      "holdout_nrmse": 0.02174241579035211,
+      "limit_nrmse": 0.06,
+      "outcome": "pass",
+      "parameters": {
+        "diameter_nm": 249.78009386746263,
+        "n_real": 2.154803226914861,
+        "k": 0.037108503572374316
+      },
+      "parameter_errors": {
+        "diameter_nm": {
+          "absolute": 1.1500938674626298,
+          "fraction_of_search_range": 0.002555764149916955
+        },
+        "n_real": {
+          "absolute": 0.01259677308513929,
+          "fraction_of_search_range": 0.007198156048651024
+        },
+        "k": {
+          "absolute": 0.0010914964276256822,
+          "fraction_of_search_range": 0.0031185612217876635
+        }
+      },
+      "latent_holdout_nrmse": 0.005693000239849896,
+      "trial_count": 351,
+      "kind": "actual AGH",
+      "seed": null,
+      "status": "complete",
+      "protocol_complete": true,
+      "model": "agnes-3.0-flash",
+      "session_id": "agnes:local:local-dev:cli:workspace:1d0386f57163af3a"
+    },
+    {
+      "case_id": "mismatch",
+      "run_id": "93dd00121a0c415681d5d3c0d66770fa",
+      "train_rmse": 0.28414252155270586,
+      "holdout_rmse": 0.24512735863322258,
+      "normalization_scale": 2.2521915096441036,
+      "train_nrmse": 0.12616268214136314,
+      "holdout_nrmse": 0.10883948260330585,
+      "limit_nrmse": 0.05,
+      "outcome": "inadequate",
+      "parameters": {
+        "diameter_nm": 229.0986123364185,
+        "n_real": 2.095912434302892,
+        "k": 0.08625253138898437
+      },
+      "parameter_errors": null,
+      "latent_holdout_nrmse": 0.10883948260330585,
+      "trial_count": 279,
+      "kind": "actual AGH",
+      "seed": null,
+      "status": "complete",
+      "protocol_complete": true,
+      "model": "agnes-3.0-flash",
+      "session_id": "agnes:local:local-dev:cli:workspace:d351103dc1e72d2a"
+    }
+  ],
+  "agh_statuses": [
+    {
+      "case_id": "clean_a",
+      "run_id": "69f40ac21827433a98ad5a231b92706c",
+      "sealed": true,
+      "trial_count": 647,
+      "protocol_complete": true,
+      "evidence": {
+        "run_id": "69f40ac21827433a98ad5a231b92706c",
+        "scenario_id": "clean_a",
+        "model": "agnes-3.0-flash",
+        "session_id": "agnes:local:local-dev:cli:workspace:641810df9103ef6a",
+        "evidence_path": "D:\\chat Gpt\\2026-10-10\\miepython-https-github-com-scottprahl-miepython-3\\outputs\\nano_chameleon\\benchmarks\\20261010T151242Z_161152a2\\clean_a.agh.json",
+        "complete": true
+      }
+    },
+    {
+      "case_id": "clean_b",
+      "run_id": "6316c87602d84c2fab5e20a6ed5bcad9",
+      "sealed": true,
+      "trial_count": 643,
+      "protocol_complete": true,
+      "evidence": {
+        "run_id": "6316c87602d84c2fab5e20a6ed5bcad9",
+        "scenario_id": "clean_b",
+        "model": "agnes-3.0-flash",
+        "session_id": "agnes:local:local-dev:cli:workspace:0965fb416b1f8007",
+        "evidence_path": "D:\\chat Gpt\\2026-10-10\\miepython-https-github-com-scottprahl-miepython-3\\outputs\\nano_chameleon\\benchmarks\\20261010T151242Z_161152a2\\clean_b.agh.json",
+        "complete": true
+      }
+    },
+    {
+      "case_id": "noisy",
+      "run_id": "4ca3625df4674a17a83544d289127441",
+      "sealed": true,
+      "trial_count": 351,
+      "protocol_complete": true,
+      "evidence": {
+        "run_id": "4ca3625df4674a17a83544d289127441",
+        "scenario_id": "noisy",
+        "model": "agnes-3.0-flash",
+        "session_id": "agnes:local:local-dev:cli:workspace:1d0386f57163af3a",
+        "evidence_path": "D:\\chat Gpt\\2026-10-10\\miepython-https-github-com-scottprahl-miepython-3\\outputs\\nano_chameleon\\benchmarks\\20261010T151242Z_161152a2\\noisy.agh.json",
+        "complete": true
+      }
+    },
+    {
+      "case_id": "mismatch",
+      "run_id": "93dd00121a0c415681d5d3c0d66770fa",
+      "sealed": true,
+      "trial_count": 279,
+      "protocol_complete": true,
+      "evidence": {
+        "run_id": "93dd00121a0c415681d5d3c0d66770fa",
+        "scenario_id": "mismatch",
+        "model": "agnes-3.0-flash",
+        "session_id": "agnes:local:local-dev:cli:workspace:d351103dc1e72d2a",
+        "evidence_path": "D:\\chat Gpt\\2026-10-10\\miepython-https-github-com-scottprahl-miepython-3\\outputs\\nano_chameleon\\benchmarks\\20261010T151242Z_161152a2\\mismatch.agh.json",
+        "complete": true
+      }
+    }
+  ],
+  "criteria": {
+    "clean_a": {
+      "holdout_nrmse_limit": 0.01,
+      "interpretation": "Held-out NRMSE <=1% for spectrum recovery. Parameter errors are diagnostics only; finite spectra can admit weakly identified parameters, especially near low-contrast bounds."
+    },
+    "clean_b": {
+      "holdout_nrmse_limit": 0.01,
+      "interpretation": "Held-out NRMSE <=1% for spectrum recovery. Parameter errors are diagnostics only; finite spectra can admit weakly identified parameters, especially near low-contrast bounds."
+    },
+    "lower_boundary": {
+      "holdout_nrmse_limit": 0.01,
+      "interpretation": "Held-out NRMSE <=1% for spectrum recovery. Parameter errors are diagnostics only; finite spectra can admit weakly identified parameters, especially near low-contrast bounds."
+    },
+    "upper_boundary": {
+      "holdout_nrmse_limit": 0.01,
+      "interpretation": "Held-out NRMSE <=1% for spectrum recovery. Parameter errors are diagnostics only; finite spectra can admit weakly identified parameters, especially near low-contrast bounds."
+    },
+    "noisy": {
+      "holdout_nrmse_limit": 0.06,
+      "interpretation": "Observed held-out NRMSE <=6% (about three times the prescribed 2% signal-relative noise sigma). Recovering the random noise or exact parameters is not required."
+    },
+    "mismatch": {
+      "holdout_nrmse_limit": 0.05,
+      "interpretation": "Model adequacy diagnostic: <=5% held-out NRMSE supports this constant-index approximation on this grid; a miss is not evidence that the optimizer is defective. No constant n,k ground truth exists."
+    }
+  }
+}
